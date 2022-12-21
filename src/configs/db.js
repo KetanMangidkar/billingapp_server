@@ -3,5 +3,5 @@ require("dotenv").config();
 
 mongoose.set("strictQuery", false);
 module.exports = () => {
-  return mongoose.connect(process.env.mongoURI);
+  return mongoose.connect("mongodb://localhost:27017/billingapp");
 };
